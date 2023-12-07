@@ -23,4 +23,4 @@ with open("puzzle_input.txt", "r") as file:
             st = st[0] + st[- 1]
         num = num + int(st)
 
-print(num)
+print('Day 01 Part 2:', num)

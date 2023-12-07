@@ -8,4 +8,4 @@ with open("puzzle_input.txt", "r") as file:
     lines = file.readlines()
 
 final_sum = sum(sum_of_digits(line) for line in lines)
-print(final_sum)
+print('Day 01 Part 1:', final_sum)
