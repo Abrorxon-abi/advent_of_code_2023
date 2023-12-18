@@ -159,4 +159,5 @@ input_lines = read_file("puzzle_input.txt")
 
 reflections = parse_input(input_lines)
 part_1_answer = calc_answer_for_part_one(reflections)
-print(f"Part 1: {part_1_answer}")
+
+print(f"Day 13 Part 1: {part_1_answer}")

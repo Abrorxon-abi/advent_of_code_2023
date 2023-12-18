@@ -32,4 +32,4 @@ for i, x in enumerate(matchNum):
         for j in range(i, x+i):
             copyNum[j+1] += 1
 
-print(sum(copyNum))
+print('Day 4 Part 2:', sum(copyNum))

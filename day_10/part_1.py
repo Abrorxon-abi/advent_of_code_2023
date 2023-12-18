@@ -34,7 +34,7 @@ while (True):
             else:
                 coords[0] -= 1
                 direction = 0
-        case "J":  # ┘ should"ve been better
+        case "J":
             if direction == 1:
                 coords[1] -= 1
                 direction = 3
@@ -61,4 +61,4 @@ while (True):
     if (currTile == "S" or currTile == '.'):
         break
 
-print(math.ceil(steps/2))
+print('Day 10 Part 1:', math.ceil(steps/2))

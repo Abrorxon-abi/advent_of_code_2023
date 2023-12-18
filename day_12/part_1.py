@@ -45,4 +45,4 @@ total = 0
 for x in inputs:
     total += checkValid(x[0], x[1])
 
-print(total)
+print('Day 12 Part 1:', total)

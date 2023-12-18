@@ -42,4 +42,4 @@ for i, x in enumerate(coords):
         sub = abs(coords[j][0] - x[0]) + abs((coords[j][1] - x[1]))
         total += sub
 
-print(total)
+print('Day 11 Part 2:', total)

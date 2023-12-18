@@ -89,4 +89,4 @@ total = 0
 for x in range(0,len(convertedMatches)):
     total += (convertedMatches[x][1] * (len(convertedMatches)-x))
 
-print(total)
+print('Day 7 Part 2:', total)

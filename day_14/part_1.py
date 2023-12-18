@@ -1,8 +1,8 @@
 input_file = 'puzzle_input.txt'
 
-q = {14: open(input_file).read().strip()}
+f = open(input_file).read().strip()
 
-platform = [list(x) for x in q[14].strip().split('\n')]
+platform = [list(x) for x in f.strip().split('\n')]
 platform.insert(0, ['#']*len(platform[0]))
 for i in range(len(platform)):
     for j in range(len(platform[0])):
@@ -15,5 +15,6 @@ for i in range(len(platform)):
                     platform[k+1][j] = '.'
             else:
                 platform[0][j] = '.'
-print('Part 1:', sum(
+                
+print('Day 14 Part 1:', sum(
     [sum([1 for x in p if x == 'O'])*(i+1) for i, p in enumerate(platform[::-1])]))

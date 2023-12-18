@@ -51,4 +51,4 @@ for table in maps:
 
     current = out
 
-print('Answer:', min(c[0] for c in current))
+print('Day 5 Part 2:', min(c[0] for c in current))

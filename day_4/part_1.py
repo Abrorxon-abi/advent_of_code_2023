@@ -22,4 +22,4 @@ for i, x in enumerate(cardNums):
         points = pow(2, matches-1)
     total += points
 
-print(total)
+print('Day 4 Part 1:', total)

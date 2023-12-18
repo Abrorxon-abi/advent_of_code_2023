@@ -33,4 +33,4 @@ for x in inputs:
         steps[y+1].append(temp)
     total += steps[-1][-1]
 
-print(total)
+print('Day 9 Part 1:', total)

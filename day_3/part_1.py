@@ -32,4 +32,4 @@ for index, posRow in enumerate(numPositions):
         if (FindSymbols(numInfo[0], index, numInfo[1])):
             validNums += numInfo[2]
 
-print(validNums)
+print('Day 3 Part 1:', validNums)

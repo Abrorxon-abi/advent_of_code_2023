@@ -12,4 +12,5 @@ for g in games:
         n, c = int(d[0]), d[1]
         t[c].append(int(n))
     power_num += max(t['red']) * max(t['green']) * max(t['blue'])
-print('Day 02 Part 2:', power_num)
+
+print('Day 2 Part 2:', power_num)

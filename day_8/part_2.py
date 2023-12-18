@@ -34,4 +34,4 @@ while (True):
         break
 
 total = math.lcm(*stepsList)
-print(total)
+print('Day 8 Part 2:', total)

@@ -35,4 +35,4 @@ for x in seeds:
     print(fr'{currentMap}')
     seedLocations.append(currentMap)
 
-print(min(seedLocations))
+print('Day 5 Part 1:', min(seedLocations))

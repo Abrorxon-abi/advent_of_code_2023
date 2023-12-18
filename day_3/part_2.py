@@ -40,4 +40,4 @@ for k in gearsFound:
     if len(gearsFound[k]) == 2:
         total += gearsFound[k][0] * gearsFound[k][1]
 
-print(total)
+print('Day 3 Part 2:', total)

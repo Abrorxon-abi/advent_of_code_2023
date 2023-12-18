@@ -1,5 +1,5 @@
 input_file = 'puzzle_input.txt'
-q = {14: open(input_file).read().strip()}
+f = open(input_file).read().strip()
 
 
 def tilt_platform(platform, direction):
@@ -62,7 +62,7 @@ def string_to_plat(string):
     return [x.split('x') for x in string.split('y')]
 
 
-platform = [['#'] + list(x) + ['#'] for x in q[14].strip().split('\n')]
+platform = [['#'] + list(x) + ['#'] for x in f.strip().split('\n')]
 platform.insert(0, ['#']*len(platform[0]))
 platform.append(['#']*len(platform[0]))
 size = len(platform)

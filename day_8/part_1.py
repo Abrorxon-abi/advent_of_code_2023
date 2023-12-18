@@ -24,4 +24,4 @@ while (True):
     if currKey == 'ZZZ':
         break
 
-print(steps)
+print('Day 8 Part 1:', steps)

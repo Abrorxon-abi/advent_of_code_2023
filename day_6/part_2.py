@@ -16,4 +16,5 @@ for lowBound in range(math.ceil(time/2)):
         break
 
 total = (time - 2*lowBound)+1
-print(total)
+
+print('Day 6 Part 2:', total)

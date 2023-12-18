@@ -90,4 +90,4 @@ for j, y in enumerate(pipeMap):
             case _:
                 pass
 
-print(total)
+print('Day 10 Part 2:', total)

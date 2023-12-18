@@ -17,4 +17,4 @@ for x, y in zip(timeList, distList):
             break
     total *= (x - 2*lowBound)+1
 
-print(total)
+print('Day 6 Part 1:', total)

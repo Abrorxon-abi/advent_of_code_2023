@@ -12,4 +12,5 @@ for g in games:
         if (n > 12 and c == 'red') or (n > 13 and c == 'green') or (n > 14 and c == 'blue'):
             count -= int(g[0])
             break
-print('Day 02 Part 1:', count)
+
+print('Day 2 Part 1:', count)
