@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import fileinput
 import numpy as np
 from collections import namedtuple
