@@ -1,4 +1,3 @@
-import copy
 import re
 
 input_file = 'puzzle_input.txt'
@@ -67,41 +66,6 @@ def sol1(rulebook, l_p):
         if w == "A":
             s += p.score()
     return s
-
-
-class prange:
-    def __init__(self, p=None):
-        self._d = {}
-        self._d['x'] = range(1, 4001)
-        self._d['m'] = range(1, 4001)
-        self._d['a'] = range(1, 4001)
-        self._d['s'] = range(1, 4001)
-
-    def __getitem__(self, i):
-        return self._d[i]
-
-    def __setitem__(self, i, val):
-        self._d[i] = val
-
-    def fork(self, s):
-        c = s[0]
-
-        l_true = []
-        l_false = []
-
-        for i in self[c]:
-            if eval(f"{i}{s[1:]}"):
-                l_true.append(i)
-            else:
-                l_false.append(i)
-
-        ptrue = copy.deepcopy(self)
-        ptrue[c] = l_true
-        self[c] = l_false
-        return ptrue
-
-    def score(self,):
-        return len(self._d['x']) * len(self._d['m']) * len(self._d['a']) * len(self._d['s'])
 
 
 def main():
